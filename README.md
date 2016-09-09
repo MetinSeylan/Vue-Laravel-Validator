@@ -2,6 +2,10 @@
 
 This plugin handle laravel validation response and simple creating form and posting data.
 
+#install
+```
+npm i vue-laravel-validator --save
+```
 ###Usage
 javascript file
 ``` js
