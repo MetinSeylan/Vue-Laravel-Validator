@@ -1,0 +1,39 @@
+{
+  "name": "vue-laravel-validator",
+  "description": "Laravel validation error handler for vuejs",
+  "author": "Metin Seylan",
+  "license": "MIT",
+  "main": "dist/build.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "cross-env": "^2.0.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "vue": "^1.0.26",
+    "vue-resource": "^0.9.3"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetinSeylan/VueLaravelValidator.git"
+  },
+  "keywords": [
+    "vuejs",
+    "laravel",
+    "validator",
+    "vuejs",
+    "validate",
+    "form"
+  ],
+  "bugs": {
+    "url": "https://github.com/MetinSeylan/VueLaravelValidator/issues"
+  },
+  "homepage": "https://github.com/MetinSeylan/VueLaravelValidator#readme"
+}
