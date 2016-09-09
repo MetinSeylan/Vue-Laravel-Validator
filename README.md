@@ -6,7 +6,7 @@ This plugin handle laravel validation response and simple creating form and post
 ```
 npm i vue-laravel-validator --save
 ```
-###Usage
+##Usage
 javascript file
 ``` js
 import Vue from 'vue';
