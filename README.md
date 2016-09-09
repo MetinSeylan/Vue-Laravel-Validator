@@ -15,7 +15,7 @@ Vue.use(LaravelValidator);
 new Vue({
   data(){
     return {
-      form: this.form({
+      form: this.$form({
           'user': null, // or Vuex this.user.name eg.
           'age': null,
           'email': null
