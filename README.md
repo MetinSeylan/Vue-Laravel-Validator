@@ -75,10 +75,10 @@ public function save(Request $request){
 | Title | Type | Description |
 | :------------- | :------------- | :------------- |
 | `.$busy` | `Boolean` | form proccess status (use loading animation eg.)  |
-| `$errors.get({input})` | `Array|String` | Get laravel response error  |
-| `$errors.has({input})` | `Boolean` | get input has error  |
-| `$errors.all()` | `Array|String` | get all laravel errors |
-| `$fields.{input}` | `Input` | get raw input value (use in template) |
+| `.$errors.get({input})` | `Array|String` | Get laravel response error  |
+| `.$errors.has({input})` | `Boolean` | get input has error  |
+| `.$errors.all()` | `Array|String` | get all laravel errors |
+| `.$fields.{input}` | `Input` | get raw input value (use in template) |
 | `.post(uri)` | `string` | Vue-resource post method |
 | `.put(uri)` | `string` | Vue-resource put method |
 | `.delete(url)` | `string` | Vue-resource delete method |
