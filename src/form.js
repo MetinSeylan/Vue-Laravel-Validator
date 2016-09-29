@@ -10,18 +10,16 @@ export default class{
     }
 
 
-    post (uri) {
-        return this.request('post', uri);
+    post (uri, options) {
+        return this.request('post', uri, options);
     }
 
-
-    put (uri) {
-        return this.request('put', uri);
+    patch (uri, options) {
+        return this.request('patch', uri, options);
     }
 
-
-    delete(uri) {
-        return this.request('delete', uri);
+    put (uri, options) {
+        return this.request('put', uri, options);
     }
 
     setBusy(status){
@@ -32,14 +30,14 @@ export default class{
         this.$errors = new Error(errors);
     }
 
-    request (method, uri) {
+    request (method, uri, options) {
 
         var vm = this;
 
         return new Promise(function (resolve, reject) {
             vm.setBusy(true);
 
-            vm.$http[method](uri, vm.$fields).then((response) => {
+            vm.$http[method](uri, vm.$fields, options).then((response) => {
                 resolve(response);
             }, (response) => {
 
