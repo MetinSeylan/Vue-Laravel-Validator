@@ -19,7 +19,7 @@
     "vue": "^1.0.26",
     "vue-resource": "^0.9.3"
   },
-  "version": "1.0.0",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MetinSeylan/VueLaravelValidator.git"
