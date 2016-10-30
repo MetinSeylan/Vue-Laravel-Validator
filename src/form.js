@@ -31,9 +31,9 @@ export default class{
     }
 
     request (method, uri, options) {
-
+        this.setError({});
         var vm = this;
-
+        
         return new Promise(function (resolve, reject) {
             vm.setBusy(true);
 
