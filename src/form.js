@@ -40,8 +40,10 @@ export default class{
             vm.$http[method](uri, vm.$fields, options).then((response) => {
                 resolve(response);
             }, (response) => {
-
-                vm.setError(response.data);
+                if (typeof response.data.errors === "object")
+                    vm.setError(response.data.errors);
+                else
+                    vm.setError(response.data);
 
                 reject(response);
 
